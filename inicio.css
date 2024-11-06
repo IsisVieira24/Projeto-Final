@@ -1,0 +1,282 @@
+body {
+    font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    background-color: #F5F5DC;
+    margin: 10px;
+    padding: 0px;
+ 
+}
+nav {
+    background-color:#BC8F8F;
+    padding: 8px 0;
+    top:0;
+    height: 50px;
+   
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+   margin: 0 ;
+    padding: 0 20px;
+    display: flex;
+    justify-content: right;
+}
+
+
+nav ul li {
+    position: relative; /* Necessário para o posicionamento do dropdown */
+    margin: 0 25px;
+}
+
+
+nav ul li a {
+    color: rgb(250, 249, 249);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: #f7f8f5;
+}
+
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color:#BC8F8F;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+
+nav ul li .dropdown-content li {
+    margin: 20px;
+}
+
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+
+nav ul li .dropdown-content li a:hover {
+    background-color:#CD8C95 ; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/*icone*/
+nav img{
+    width: 40px;
+    border-radius: 50px;
+    align-items: center;
+   }
+
+
+
+   /*banners*/
+
+
+.banner-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.banner {
+    display: none;
+    width: 100%;
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+.active {
+    display: block;
+}
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+
+.prev {
+    left: 10px;
+}
+
+
+.next {
+    right: 10px;
+}
+
+
+
+/* Estilização do container do slider*/
+
+
+
+/* Estilo para o contêiner principal */
+.container {
+
+    display: flex; /* Define o contêiner como um flexbox */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap:wrap-reverse; /* Permite que os cards quebrem linha se necessário */
+}
+
+/* Estilo para cada card */
+.card {
+    
+        background-color: #FFC1C1;
+        border: 20px solid #EEB4B4;
+        border-radius: 15px; /* Arredonda os cantos dos cards */
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+        flex: 1; /* Permite que os cards cresçam igualmente */
+        max-width: 200px; /* Define uma largura máxima para os cards */
+        text-align: center
+    }
+    
+
+
+/* Estilo para o título dos cards */
+.card h2 {
+    
+        margin-top: 0;
+        font-size: 1.5em;
+        color: #333;
+    }
+
+/* Estilo para o parágrafo dos cards */
+
+.card p {
+        color: #666;
+}
+    
+
+
+
+
+
+
+
+
+footer{
+    background-color:#BC8F8F;
+    color:#0d0d0d;
+    padding:10px 20px;
+    font-family:Arial,sans-serif;
+    height: 180px;
+    text-align: center;
+    }
+    
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-section{
+      flex-basis: 23%;
+      margin-bottom:20px;
+    }
+    
+    .footer-section h4 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color:#BC8F8F(151, 19, 153)
+    }
+    
+    .footer-section p, .footer-section ul{
+        margin:0;
+        padding: 0;
+        line-height: 1.6;
+    }
+    
+    .footer-section ul{
+        list-style-type: none;
+    }
+    
+    .footer-section ul li{
+        margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a{
+        color:#1C1C1C(203, 4, 248);
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .footer-section ul li a:hover{
+        color:#BC8F8F;
+        color:(127, 204, 255)
+    }
+    
+    .social-links a{
+        display: inline-block;
+        margin-right: 10px;
+        color:#1C1C1C;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .social-links a:hover{
+        color:#BC8F8F (136, 5, 34);
+    }
+    
+    .footer-bottom{
+        text-align: center;
+        margin-top:20px
+    }
+    
+    .footer-bottom{
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        border-top: 1px solid #8B3A62;
+        font-size: 14px;
+    }
+    
+    .footer-bottom p{
+        margin: 0;
+    }
+    
+    
+
+    

@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=IM+Fell+Double+Pica+SC&family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Kablammo&display=swap');
+/* Estilo do menu de navegação */
+
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    background-color:#F5F5DC;
+    margin: 10px;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+   
+}
+nav {
+    background-color: #BC8F8F;
+    padding: 8px 0;
+    top:0;
+   
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+   margin: 0 ;
+    padding: 0 20px;
+    display: flex;
+    justify-content: right;
+}
+
+
+nav ul li {
+    position: relative; /* Necessário para o posicionamento do dropdown */
+    margin: 0 25px;
+}
+
+
+nav ul li a {
+    color: rgb(250, 249, 249);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: #070707;
+}
+
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+
+nav ul li .dropdown-content li {
+    margin: 20px;
+}
+
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/*icone*/
+nav img{
+    width: 40px;
+    border-radius: 35px;
+}
+
+
+
+
+main{
+    background-color:#8B3A62 ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  0 0 10px rgb(22, 22, 22);
+}
+
+
+/*estabiliza a tabela do carrinho*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+
+th, td{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 20px;
+}
+
+
+th{
+    background-color:azure;
+    font-weight: bold;
+}
+ estiliza o input de quantidade
+ input.quantidade{
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+ }
+ estiliza o botao de remover
+
+
+button.remover-produto{
+    background-color: rgb(73, 74, 74);
+    color: #242323;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #BC8F8F;
+}
+
+
+estiliza o total final
+.total-final{
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+.total-final{
+    color: #010000;
+}
+
+
+
+
+#total-final{
+    color: rgb(15, 16, 16);
+}
+
+
+button.remover-produto:hover {
+    background-color:aliceblue;
+}
+
+
+
+
+
+
+
+
+footer{
+    background-color:#BC8F8F;
+    color:#0d0d0d;
+    padding:10px 20px;
+    font-family:Arial,sans-serif;
+    height: 380px;
+    text-align: center;
+    }
+    
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-section{
+      flex-basis: 23%;
+      margin-bottom:20px;
+    }
+    
+    .footer-section h4 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color:#BC8F8F(151, 19, 153)
+    }
+    
+    .footer-section p, .footer-section ul{
+        margin:0;
+        padding: 0;
+        line-height: 1.6;
+    }
+    
+    .footer-section ul{
+        list-style-type: none;
+    }
+    
+    .footer-section ul li{
+        margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a{
+        color:#1C1C1C(203, 4, 248);
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .footer-section ul li a:hover{
+        color:#BC8F8F;
+        color:(127, 204, 255)
+    }
+    
+    .social-links a{
+        display: inline-block;
+        margin-right: 10px;
+        color:#1C1C1C;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .social-links a:hover{
+        color:#BC8F8F (136, 5, 34);
+    }
+    
+    .footer-bottom{
+        text-align: center;
+        margin-top:20px
+    }
+    
+    .footer-bottom{
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        border-top: 1px solid #8B3A62;
+        font-size: 14px;
+    }
+    
+    .footer-bottom p{
+        margin: 0;
+    }
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

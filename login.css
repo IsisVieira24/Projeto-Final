@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=IM+Fell+Double+Pica+SC&family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Kablammo&display=swap');
+/* Estilo do menu de navegação */
+
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    background-color: #F5F5DC;
+    margin: 10px;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+}
+nav {
+    background-color: #BC8F8F;
+    padding: 8px 0;
+    top:0;
+   
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+   margin: 0 ;
+    padding: 0 20px;
+    display: flex;
+    justify-content: right;
+}
+
+
+nav ul li {
+    position: relative; /* Necessário para o posicionamento do dropdown */
+    margin: 0 25px;
+}
+
+
+nav ul li a {
+    color: rgb(250, 249, 249);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+
+}
+
+
+nav ul li a:hover {
+    color: #f7f8f5;
+}
+
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: #BC8F8F;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+
+nav ul li .dropdown-content li {
+    margin: 20px;
+}
+
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/*icone*/
+nav img{
+    width: 40px;
+    border-radius: 35px;
+   
+ 
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ 
+ 
+ 
+  .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    justify-content:center;
+  align-items: center;
+  margin: auto;
+  }
+ 
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+ 
+  .form-group {
+    margin-bottom: 15px;
+  }
+ 
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #CD8C95;
+  }
+ 
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+ 
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: #0e0f0f;
+    outline: none;
+  }
+ 
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color:#CD8C95;
+    
+  
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+ 
+  button:hover {
+    background-color: #CD8C95;
+  }
+ 
+
+
+  a{
+    color:#CD8C95;
+    justify-content: center;
+  }

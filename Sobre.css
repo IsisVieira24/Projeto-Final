@@ -1,0 +1,188 @@
+body {
+    font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    background-color: #F5F5DC;
+    margin: 10px;
+    padding: 0px;
+ 
+}
+nav {
+    background-color:#BC8F8F;
+    padding: 8px 0;
+    top:0;
+    height: 50px;
+   
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+   margin: 0 ;
+    padding: 0 20px;
+    display: flex;
+    justify-content: right;
+}
+
+
+nav ul li {
+    position: relative; /* Necessário para o posicionamento do dropdown */
+    margin: 0 25px;
+}
+
+
+nav ul li a {
+    color: rgb(250, 249, 249);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: #f7f8f5;
+}
+
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color:#BC8F8F;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+
+nav ul li .dropdown-content li {
+    margin: 20px;
+}
+
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+
+nav ul li .dropdown-content li a:hover {
+    background-color:#CD8C95 ; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/*icone*/
+nav img{
+    width: 40px;
+    border-radius: 50px;
+    align-items: center;
+   }
+
+
+
+   header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.sobre {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color:#BC8F8F;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+.sobre p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.missao-visao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.missao, .visao {
+    width: 48%;
+}
+
+.missao h2, .visao h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.missao p, .visao p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+footer {
+    background-color:#BC8F8F;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+
+   
